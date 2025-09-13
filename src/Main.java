@@ -16,9 +16,9 @@ public class Main {
         // Simulações
         executarSimulacao("FCFS", new FCFS(), gerarProcessos(numProcessos));
         executarSimulacao("SJF", new SJF(), gerarProcessos(numProcessos));
-        executarSimulacao("Round Robin (q=5)", new RoundRobin(5), gerarProcessos(numProcessos));
-        executarSimulacao("Round Robin (q=10)", new RoundRobin(10), gerarProcessos(numProcessos));
-        executarSimulacao("Round Robin (q=20)", new RoundRobin(20), gerarProcessos(numProcessos));
+        executarSimulacao("RoundRobin (q=5)", new RoundRobin(5), gerarProcessos(numProcessos));
+        executarSimulacao("RoundRobin (q=10)", new RoundRobin(10), gerarProcessos(numProcessos));
+        executarSimulacao("RoundRobin (q=20)", new RoundRobin(20), gerarProcessos(numProcessos));
     }
 
     private static List<Processo> gerarProcessos(int n) {
@@ -44,3 +44,4 @@ public class Main {
         System.out.println();
     }
 }
+
